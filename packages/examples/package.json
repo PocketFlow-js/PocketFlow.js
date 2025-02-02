@@ -1,0 +1,26 @@
+{
+  "name": "@pocketflow/examples",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "run:essay": "tsx src/essay.ts",
+    "build": "tsup src/essay.ts --format cjs,esm",
+    "dev": "tsx watch src/essay.ts",
+    "debug": "tsx --inspect-brk src/essay.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@pocketflow/core": "workspace:*",
+    "js-yaml": "^4.1.0",
+    "openai": "^4.28.4",
+    "readline-sync": "^1.4.10",
+    "yaml": "^2.3.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "tsup": "^8.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/readline-sync": "^1.4.8"
+  }
+}
