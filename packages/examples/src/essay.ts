@@ -1,5 +1,4 @@
 import { BatchFlow, BatchNode, Flow, Node } from "@pocketflow/core";
-import { visualize } from "@pocketflow/viz";
 import dotenv from "dotenv";
 import * as fs from "fs";
 import * as yaml from "js-yaml";
@@ -202,6 +201,6 @@ class NoOp extends Node { }
   frf.transition("retry").to(frf);
   frf.transition("end").to(noop);
   const qa = new Flow(frf);
-  await visualize(qa);
+  await qa.run(shared);
 })();
 
