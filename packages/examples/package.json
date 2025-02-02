@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "run:essay": "tsx src/essay.ts",
+    "run:taboo": "tsx src/taboo.ts",
     "build": "tsup src/essay.ts --format cjs,esm",
     "dev": "tsx watch src/essay.ts",
     "debug": "tsx --inspect-brk src/essay.ts",
