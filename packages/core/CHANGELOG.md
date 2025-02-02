@@ -1,5 +1,11 @@
 # @pocketflow/core
 
+## 0.2.1
+
+### Patch Changes
+
+- ab34c13: add visualizer package
+
 ## 0.2.0
 
 ### Minor Changes
