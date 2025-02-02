@@ -1,6 +1,6 @@
 # PocketFlow.js Viz
 
-Helper for @pocketflow/core to visualize the workflow.
+Helper for `@pocketflow/core` to visualize the workflow.
 
 ## Installation
 
@@ -34,3 +34,7 @@ node1.connect(node2);
   await visualize(new Flow(node1));
 })();
 ```
+
+For the example below, refer to the code from [essay.ts](./packages/examples/src/essay.ts).
+
+![Flow visualization](./assets/screenshot.png)
