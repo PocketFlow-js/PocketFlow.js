@@ -37,4 +37,4 @@ node1.connect(node2);
 
 For the example below, refer to the code from [essay.ts](./packages/examples/src/essay.ts).
 
-![Flow visualization](./assets/screenshot.png)
+![Flow visualization](https://github.com/PocketFlow-js/PocketFlow.js/blob/main/packages/viz/assets/screenshot.png?raw=true)
