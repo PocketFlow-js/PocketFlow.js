@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pocketflow/core": "workspace:*",
+    "@pocketflow/viz": "workspace:*",
     "js-yaml": "^4.1.0",
     "openai": "^4.28.4",
     "readline-sync": "^1.4.10",
