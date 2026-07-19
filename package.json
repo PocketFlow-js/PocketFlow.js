@@ -16,14 +16,20 @@
     "prepare": "changeset init"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.12",
-    "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "turbo": "^1.12.4",
-    "typescript": "^5.3.3"
+    "@changesets/cli": "^2.31.1",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
+    "typescript-eslint": "^8.64.0",
+    "prettier": "^3.9.5",
+    "turbo": "^2.10.5",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild@<0.28.1": "^0.28.1",
+      "ws@8": "^8.21.0",
+      "yaml@2": "^2.8.3"
+    }
   },
   "packageManager": "pnpm@9.15.4",
   "engines": {
