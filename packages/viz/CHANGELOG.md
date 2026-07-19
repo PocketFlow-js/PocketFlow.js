@@ -1,6 +1,6 @@
 # @pocketflow/viz
 
-## 0.2.2
+## 0.3.0
 
 ### Patch Changes
 
