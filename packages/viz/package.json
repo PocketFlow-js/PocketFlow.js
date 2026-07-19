@@ -15,21 +15,35 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "Mert Canatan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js.git",
+    "directory": "packages/viz"
+  },
+  "homepage": "https://github.com/PocketFlow-js/PocketFlow.js#readme",
+  "bugs": {
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
-    "lint": "eslint src --ext .ts"
+    "lint": "eslint src"
   },
   "dependencies": {
     "@pocketflow/core": "workspace:*",
-    "express": "^4.18.3",
-    "vis-network": "^9.1.9",
-    "open": "^10.0.4"
+    "express": "^5.2.1",
+    "open": "^11.0.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "tsup": "^8.0.2",
-    "typescript": "^5.3.3"
+    "@types/express": "^5.0.6",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }

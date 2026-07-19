@@ -19,7 +19,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
-    "lint": "eslint src --ext .ts",
+    "lint": "eslint src",
     "test": "jest"
   },
   "keywords": [
@@ -28,14 +28,26 @@
     "machine-learning",
     "typescript"
   ],
-  "author": "",
+  "author": "Mert Canatan",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/PocketFlow-js/PocketFlow.js#readme",
+  "bugs": {
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/js-yaml": "^4.0.9",
-    "@types/readline-sync": "^1.4.8",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.1.2",
-    "tsup": "^8.0.2"
+    "@types/jest": "^30.0.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }
