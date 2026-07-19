@@ -1,28 +1,29 @@
 {
   "name": "@pocketflow/examples",
-  "version": "0.1.1",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
     "run:essay": "tsx src/essay.ts",
     "run:taboo": "tsx src/taboo.ts",
-    "build": "tsup src/essay.ts --format cjs,esm",
-    "dev": "tsx watch src/essay.ts",
-    "debug": "tsx --inspect-brk src/essay.ts",
+    "run:taboo-human": "tsx src/taboo-human.ts",
+    "run:loop": "tsx src/loop.ts",
+    "clean": "rm -rf dist",
     "lint": "eslint src --ext .ts"
   },
   "dependencies": {
     "@pocketflow/core": "workspace:*",
-    "@pocketflow/viz": "workspace:*",
+    "dotenv": "^16.4.5",
     "js-yaml": "^4.1.0",
-    "openai": "^4.28.4",
+    "openai": "^4.82.0",
     "readline-sync": "^1.4.10",
-    "yaml": "^2.3.1",
-    "dotenv": "^16.4.5"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "tsx": "^4.7.1",
-    "tsup": "^8.0.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/readline-sync": "^1.4.8"
+    "@types/node": "^20.11.24",
+    "@types/readline-sync": "^1.4.4",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
   }
 }

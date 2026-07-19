@@ -13,6 +13,16 @@ interface Edge {
   label?: string;
 }
 
+// Serialize data for safe embedding inside a <script> tag: escape characters
+// that could break out of the script context (e.g. "</script>").
+function safeJson(value: unknown): string {
+  return JSON.stringify(value)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+}
+
 function extractGraph(flow: Flow): { nodes: Node[]; edges: Edge[] } {
   const nodes: Node[] = [];
   const edges: Edge[] = [];
@@ -116,8 +126,8 @@ export async function visualize(flow: Flow, port: number = 3000): Promise<void> 
           <script type="text/javascript">
             const container = document.getElementById('flow-network');
             const data = {
-              nodes: new vis.DataSet(${JSON.stringify(graph.nodes)}),
-              edges: new vis.DataSet(${JSON.stringify(graph.edges)})
+              nodes: new vis.DataSet(${safeJson(graph.nodes)}),
+              edges: new vis.DataSet(${safeJson(graph.edges)})
             };
             const options = {
               nodes: {

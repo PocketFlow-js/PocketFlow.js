@@ -9,6 +9,9 @@
     "lint": {
       "outputs": []
     },
+    "test": {
+      "outputs": ["coverage/**"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

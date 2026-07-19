@@ -15,6 +15,21 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "Mert Canatan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js.git",
+    "directory": "packages/viz"
+  },
+  "homepage": "https://github.com/PocketFlow-js/PocketFlow.js#readme",
+  "bugs": {
+    "url": "https://github.com/PocketFlow-js/PocketFlow.js/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist",
